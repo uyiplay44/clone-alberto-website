@@ -16,7 +16,6 @@ import "./ShopItem.css";
 import { redirect } from "react-router-dom";
 
 const ShopItem = () => {
-  const [Item, setItem] = useState({ redirect });
   return (
     <div className="shopcontainer">
       <div className="main_shopitem">
