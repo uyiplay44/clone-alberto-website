@@ -1,0 +1,16 @@
+.container {
+  background-image: linear-gradient(to bottom, transparent, #272626),
+    url(../../image/IMG_4096_2000x.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgmain {
+  width: 300px;
+}
