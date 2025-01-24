@@ -104,3 +104,7 @@ img {
   font-weight: 900;
   font-family: "Poppins", sans-serif;
 }
+.cart_add {
+  display: flex;
+  align-items: center;
+}

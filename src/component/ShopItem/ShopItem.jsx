@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { FaBagShopping } from "react-icons/fa6";
 import Item1 from "../../image/3600504_1_800x.webp";
 import Item2 from "../../image/0606876_3e66cbb8-642d-47a7-93e4-2545179c37fd_800x.webp";
@@ -13,9 +12,15 @@ import Item10 from "../../image/NAPPB038_2_800x.webp";
 import Item11 from "../../image/SF8200519_800x.webp";
 import Item12 from "../../image/0606689_800x.webp";
 import "./ShopItem.css";
-import { redirect } from "react-router-dom";
+import { useState } from "react";
 
 const ShopItem = () => {
+  const [cart, setCart] = useState("");
+
+  const handleAddToCart = () => {
+    if (cart > "") setCart(cart + 1);
+    alert("Add Cart");
+  };
   return (
     <div className="shopcontainer">
       <div className="main_shopitem">
@@ -27,10 +32,12 @@ const ShopItem = () => {
       <div className="cartsection">
         <div className="carttag">
           <div className="cart">
-            <button type="submit" className="btn">
+            <button type="submit" className="btn" onClick={handleAddToCart}>
               Add Cart
             </button>
-            <FaBagShopping className="carticon" />
+            <p className="cart_add">
+              0<FaBagShopping className="carticon" />
+            </p>
           </div>
           <div className="cartImg">
             <img src={Item1} alt="" />
